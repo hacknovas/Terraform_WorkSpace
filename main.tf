@@ -1,11 +1,22 @@
-resource "aws_instance" "test_instance" {
-  ami = "ami-03f4878755434977f"
+
+provider "aws" {
+  region = "ap-south-1"
+}
+
+resource "aws_instance" "test_instance1" {
+  ami           = var.ami_aps1
   instance_type = "t2.micro"
-  provider = aws.reg1
+}
+
+resource "aws_instance" "test_instance2" {
+  ami           = var.ami_ue1
+  instance_type = "t2.micro"
+  provider      = aws.reg2
 }
 
 resource "aws_s3_bucket" "test_bucket" {
-  bucket = "work-withpdbucket-test"
-  object_lock_enabled = true 
-  provider = aws.reg2
+  bucket              = "withpdbucket-test-pdw"
+  object_lock_enabled = true
 }
+
+

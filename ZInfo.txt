@@ -1,5 +1,5 @@
 # Terraform init/plan/apply/destroy
-# alias => Multiple region or Multiple Provider
+# alias / Required_providers(Modules) => Multiple region or Multiple Provider
 
 ------------------------------------------------
 
