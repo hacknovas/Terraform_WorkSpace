@@ -1,0 +1,4 @@
+# Terraform init/plan/apply/destroy
+# alias => Multiple region
+
+* Multiple Providers
