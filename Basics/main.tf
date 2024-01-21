@@ -19,4 +19,9 @@ resource "aws_s3_bucket" "test_bucket" {
   object_lock_enabled = true
 }
 
-
+resource "aws_s3_bucket_versioning" "version_bucket_test" {
+  bucket = aws_s3_bucket.test_bucket.id
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
