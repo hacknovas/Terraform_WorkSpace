@@ -1,14 +1,14 @@
-# Terraform init/plan/apply/destroy
-# alias / Required_providers(Modules) => Multiple region or Multiple Provider
-# tfvars
-# conditional Exp
-# built-in function
+* Terraform init/plan/apply/destroy
+* alias / Required_providers(Modules) => Multiple region or Multiple Provider
+* tfvars
+* conditional Exp
+* built-in function
 
 # Modules
 
-# Remote Backend (s3_bucket)
+* Remote Backend (s3_bucket)
 
-# Terraform Workspaces
+* Terraform Workspaces
 ------------------------------------------------
 
 * Multiple Providers
